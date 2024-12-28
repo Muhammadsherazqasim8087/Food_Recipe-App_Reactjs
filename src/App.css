@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px; /* Sets the maximum width of the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 2rem; /* Adds padding inside the container */
+  text-align: center; /* Centers the text inside the container */
+}
+
+.logo {
+  height: 6em; /* Sets the height of the logo */
+  padding: 1.5em; /* Adds padding around the logo */
+  will-change: filter; /* Indicates that the 'filter' property will likely change, for performance optimization */
+  transition: filter 300ms; /* Adds a smooth transition effect to the 'filter' property over 300ms */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa); /* Adds a glowing effect to the logo on hover */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa); /* Adds a React-specific glowing effect on hover */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg); /* Starting state: no rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Ending state: 360-degree rotation */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear; /* Applies a smooth spinning animation to the second logo */
+  }
+}
+
+.card {
+  padding: 2em; /* Adds padding inside the card */
+}
+
+.read-the-docs {
+  color: #888; /* Sets the color of the text to gray */
+}

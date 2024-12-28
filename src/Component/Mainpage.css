@@ -1,0 +1,107 @@
+/* Mainpage CSS */
+
+/* General Styles */
+
+/* Main container for the entire page layout, centered with auto margin and responsive padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header style with centered text, large font size, and color */
+.head {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Search Bar Section */
+
+/* Flex container for the search bar, aligning elements centrally with spacing between them */
+.searchBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field for the search bar with a defined width, padding, and border styles */
+.searchBar input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button style for the search bar, with specific padding, background color, and no borders */
+.searchBar button {
+  padding: 10px 20px;
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Change button color on hover for a more interactive feel */
+.searchBar button:hover {
+  background-color: #ff4500; /* Darker tomato color */
+}
+
+/* Style for error messages, centered and highlighted in red */
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+}
+
+/* Home Section */
+
+/* Title style for sections, centrally aligned with a moderate font size and color */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Card container with flexible layout for responsiveness */
+.home-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+}
+
+/* Individual card style with a defined width, light background, rounded corners, and shadow */
+.card {
+  width: 200px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden; /* Ensure content doesn't spill outside the card */
+  text-align: center;
+  transition: transform 0.3s; /* Smooth scaling effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Slightly enlarge the card on hover for a visual effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Image within the card, filling the container and maintaining aspect ratio */
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ensures the image covers the space proportionally */
+}
+
+/* Title text within the card with padding and consistent font color */
+.card-title {
+  font-size: 1rem;
+  padding: 10px 5px;
+  color: #333;
+}
